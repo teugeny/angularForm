@@ -14,7 +14,6 @@ require.config({
         "ngMaterial"    : "../vendors/angularMaterial/angular-material",
 
         // LOAD SOME JQUERY MODULES
-        //"maskInput"             : "../plugins/jquery.maskedInput.min",
         "maskInput"             : "../plugins/jquery.mask.min",
         "jqueryAutoComplete"    : "../plugins/jquery.autocomplete.min"
     },
