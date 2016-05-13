@@ -1,0 +1,361 @@
+body {
+    background: url("../images/bg.jpg");
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 20px 0;
+}
+.logo h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+    max-width: 200px;
+    border: solid 1px rgba(255,255,255,0.5);
+}
+.app-container {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0,0,0,0.6);
+}
+md-content {
+    border-radius: 10px;
+    margin-top: 10vh;
+    background: rgba(255,255,255,0.98);
+}
+.reg-form {
+    width:100%;
+    max-width: 400px;
+    margin: auto;
+}
+.reg-form h1 {
+    font-family: Arial;
+    font-size: 18px;
+    text-align: center;
+}
+.reg-form h1 span {
+    font-weight: bold;
+}
+.reg-form label {
+    font-family: Arial;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #A9A9A9;
+}
+.think-padding {
+    display: inline-block;
+    width: 100%;
+}
+.think-padding > div:first-child {
+    padding-left: 0;
+    padding-right: 5px;
+}
+.think-padding > div:last-child {
+    padding-left: 5px;
+    padding-right: 0;
+}
+.no-padding {padding: 0!important;}
+div[data-register='profession'] select {
+    display: none;
+}
+div[data-register='profession'].open select {
+    display: block;
+}
+
+md-autocomplete {
+    box-shadow: none;
+    border: 1px solid rgb(207, 207, 207);
+    background: none;
+}
+.md-whiteframe-1dp, .md-whiteframe-z1 {
+    box-shadow:none;
+}
+.styled-box label {
+    padding: 0;
+    margin: 0 10px;
+}
+.styled-box input {
+    border: solid 1px #cfcfcf;
+    height: 35px;
+}
+md-input-container .md-errors-spacer {
+    min-height: 0;
+}
+.stylish_selector {
+    border: solid 1px transparent;
+    margin: 20px 0;
+}
+.stylish_selector label {display: none}
+.stylish_selector md-select .md-select-value {border: none;}
+md-select-menu {box-shadow: none;background: none;width: 72px;left: -2px;position: relative;}
+md-select-menu md-content {
+    border: solid 1px #ddd;
+    border-radius: 0;
+    margin: 46px 10px 0;
+}
+.stylish_selector .md-select-menu-container.md-active md-select-menu > * {
+    border: solid 1px #ddd;
+    border-radius: 0;
+    margin: 46px 8px 0;
+}
+.stylish_selector .md-select-value .md-text img {
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.flag_RU {
+    background: url("../images/flags/png/ru.png");
+    width: 16px;
+    height: 11px;
+    margin-left: 10px;
+}
+.flag_RU {
+    background: url("../images/flags/png/ru.png");
+    width: 16px;
+    height: 11px;
+    margin-left: 10px;
+    width: 100%;
+    height: 48px;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-position: 34% 30%;
+}
+.flag_US {
+    background: url("../images/flags/png/us.png");
+    width: 16px;
+    height: 11px;
+    margin-left: 10px;
+}
+.flag_FR {
+    background: url("../images/flags/png/fr.png");
+    width: 16px;
+    height: 11px;
+    margin-left: 10px;
+}
+.welcome-message {
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+}
+.link {
+    width: 100%;
+    height: 200px;
+    background: #ffffff;
+    border: solid 1px transparent;
+    display: inline-block;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+    margin-bottom: 10px;
+}
+.link:hover {
+    border-color: red;
+}
+.links-row {
+    padding: 20px 0;
+}
+.link.angular-material {
+    background: url("../images/ui/angular.jpg") no-repeat, #FFFFFF;
+    background-size: 25%;
+    background-position: 50% 50%;
+}
+.link.bootstrap {
+    background: url("../images/ui/bootstrap.png") no-repeat, #FFFFFF;
+    background-size: 42%;
+    background-position: 50%;
+}
+.bootstrap-styled {
+    background: #FFFFFF;
+    padding: 10px;
+}
+.form-group {display: inline-block;width: 100%!important;}
+.form-group > div {padding: 0 5px;/* height: 38px; */}
+.padding-5 {padding: 0 5px;}
+.bs-stylish_selector label {display: none;}
+#phone_selector {
+    display: inline-block;
+    width: 100%;
+    height: 42px;
+    padding: 0;
+    position: relative;
+}
+#phone_selector > div {
+    padding: 0;
+}
+.no-right-padding {padding-right: 0}
+.bs-stylish_selector {margin: 0;height: 41px;padding: 0;}
+.bs-stylish_selector md-select {height: 41px;}
+.bs-stylish_selector md-select-value {
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: #f9f9f9;
+    border: none;
+    min-width: 60px;
+    width: 60px!important;
+    height: 36px;
+    top: 2px;
+    left: 1px;
+    border-right: solid 1px #ddd;
+}
+.bootstrap-styled input {height: 42px;border-radius: 4px;box-shadow: none;}
+.bootstrap-styled input[data-app='phone'] {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-left: 0;
+}
+.bootstrap-styled .md-select-menu-container {
+    margin: 0;
+}
+.select_st2 md-content {
+    margin: 0 2px;
+    min-width: inherit;
+    left: -2px;
+}
+.select_st2 md-select-menu {
+    margin: 42px 0;
+}
+.select_st2 md-content {padding: 0!important;}
+.select_st2 md-option {padding: 0 2px 0 1px;}
+.select_st2 .md-text {
+    width: 100%;
+}
+.select_st2 .md-text > div {
+    width: 100%;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: 20% 40%;
+    margin: 0;
+    background-size: 32%;
+}
+.select_st2 .md-text p {
+    position: relative;
+    top: 25%;
+    left: 42%;
+    font-family: Arial;
+    font-size: 14px;
+}
+.select_st2 .md-select-value *:first-child {
+    background-position: 34% 30%;
+}
+.md-select-value *:first-child p {
+    position: relative;
+    top: 15%;
+    left: 67%;
+    font-family: Arial;
+    font-size: 14px;
+}
+.bootstrap-styled #phone_selector > div:nth-child(1) {width: 18%;position: absolute;z-index: 3;}
+.bootstrap-styled #phone_selector > div:nth-child(2) {width: 100%;position: absolute;z-index: 2;}
+.bootstrap-styled #phone_selector .md-select-value span {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    top: -2px;
+}
+.flag-icon {
+    background-repeat: no-repeat;
+    background-position: 33% 32%;
+    margin: 0;
+    width: 44px;
+    height: 24px;
+    background-size: 50%;
+}
+.bs-autocomplete {
+    box-shadow: none;
+    background: #FFFFFF;
+}
+
+.bootstrap-styled input[data-register='phone'] {
+    /* border-left:0; */
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding-left: 20%;
+    background: #ffffff;
+    border-radius: 4px;
+    position: absolute;
+}
+.bootstrap-styled input[data-register='phone']:focus {
+
+}
+.md-select:focus {
+    border-bottom-color: transparent!important;
+}
+.bs-stylish_selector md-select:not([disabled]):focus .md-select-value {
+    border-bottom: none;
+}
+
+.autocomplete-suggestions {border: 1px solid #ddd;background: #FFF;overflow: auto;border-top: none;}
+.autocomplete-suggestion {padding: 10px 5px;white-space: nowrap;overflow: hidden;}
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong {font-weight: normal;color: #000000;font-weight: bold;}
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+#query_result .autocomplete-suggestions {position: relative!important;-webkit-border-bottom-right-radius: 4px;-webkit-border-bottom-left-radius: 4px;-moz-border-radius-bottomright: 4px;-moz-border-radius-bottomleft: 4px;border-bottom-right-radius: 4px;border-bottom-left-radius: 4px;}
+.select_st2 .md-select-value *:first-child {
+    background-size: 50%;
+}
+.bs-stylish_selector .md-select-icon:after {
+    top: 6px!important;
+}
+#phone_selector p {
+    position: absolute;
+    top: 9px;
+    z-index: 1;
+    left: 75px;
+    opacity: 0.8;
+}
+.bootstrap-styled input {
+    box-shadow: none!important;
+}
+.bootstrap-styled input.ng-invalid.ng-touched {
+    border-color: red;
+}
+.bootstrap-styled .title {
+    margin-bottom: 30px;
+}
+.bootstrap-styled .title h1 {
+    color: #757575;
+}
+.select_st1 md-option {
+    width: 100%;
+    padding: 0;
+}
+.md-select-menu-container.md-active.select_st1 md-select-menu {
+    width: auto;
+}
+
+
+.select_st1 md-select-menu md-option[selected] .md-text {
+    width: 36%;
+    height: 100%;
+}
+.mt-select md-select {
+    height: 37px;
+    border: solid 1px #cfcfcf;
+}
+.mt-select {
+    margin: 16px 0;
+}
+.select_st1 md-content {
+    margin: 47px 0 0;
+}
+.rest button {
+    padding: 11px 10px;
+}
+[data-watch="input"] {
+    position: absolute;
+    top: 11px;
+    left: 75px;
+    opacity: 0.4;
+}

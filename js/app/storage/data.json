@@ -1,0 +1,8 @@
+{
+  "professions":["Front-end Developer","Backend-end Developer","Full-stack Developer","JS Developer","PHP Developer"],
+  "codes":[
+    {"sign":"RU", "mask":"+0 000 000-00-00","code":"+7 495 123-45-67"},
+    {"sign":"US", "mask":"+8(999) 999-9999","code":"+8(999) 999-9999"},
+    {"sign":"FR", "mask":"+6(999) 999-9999","code":"+6(999) 999-9999"}
+  ]
+}

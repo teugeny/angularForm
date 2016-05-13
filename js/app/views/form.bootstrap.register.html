@@ -1,0 +1,53 @@
+<div ng-controller="registerNewUserController_BS as ctrl" layout="column" ng-cloak="" class="md-inline-form reg-form">
+    <form class="bootstrap-styled" name="regUserForm">
+        <div class="title">
+            <h1><span>Зарегистрируйтесь</span> и начните продовать услуги через интернет сегодня</h1>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+                <label for="first_name">Имя</label>
+                <input class="form-control" type="text" id="first_name" required ng-model="user.firstName">
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+                <label for="last_name">Фамилия</label>
+                <input class="form-control" type="text" id="last_name" required ng-model="user.lastName">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="padding-5">
+                <label>Профессия</label>
+                <input
+                        type="text"
+                        data-register="profession" required
+                        autocomplete="on"
+                        ng-model="user.profession" class="form-control">
+                <section id="query_result"></section>
+            </div>
+        </div>
+        <div class="form-group padding-5">
+            <label for="phone_selector">Телефон</label>
+            <div id="phone_selector">
+                <div>
+                    <md-input-container class="md-block bs-stylish_selector" flex-gt-sm>
+                        <label>Code</label>
+                        <md-select md-container-class="select_st2" ng-model="props.phoneCode" ng-change="ctrl.changePhoneCode()">
+                            <md-option ng-repeat="item in props.phoneCodes" value="{{item.sign}}">
+                                <div class="flag-icon flag_{{item.sign}}"></div>
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+                </div>
+                <div>
+                    <input data-register="phone" class="form-control watch-input" ng-model="user.phone" type="text" placeholder="{{props.phone.code}}">
+                    <div data-watch="input"></div>
+                </div>
+            </div>
+        </div>
+        <section class="text-center rest">
+            <button
+
+                    class="btn btn-primary"
+                    ng-click="ctrl.registerUser($event)">Зарегистрироваться</button>
+        </section>
+    </form>
+</div>

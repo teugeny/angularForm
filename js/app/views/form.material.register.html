@@ -1,0 +1,68 @@
+<div
+        ng-controller="registerNewUserController_MT as ctrl"
+        layout="column"
+        ng-cloak=""
+        class="md-inline-form reg-form">
+
+    <md-content class="md-padding">
+        <form name="regUserForm">
+            <div class="title">
+                <h1><span>Зарегистрируйтесь</span> и начните продовать услуги через интернет сегодня</h1>
+            </div>
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block styled-box" flex-gt-sm>
+                    <label>Имя</label>
+                    <input required ng-model="user.firstName">
+                </md-input-container>
+                <md-input-container class="md-block styled-box" flex-gt-sm>
+                    <label>Фамилия</label>
+                    <input required ng-model="user.lastName">
+                </md-input-container>
+            </div>
+            <md-autocomplete
+                    md-no-cache="ctrl.noCache"
+                    md-selected-item="ctrl.selectedItem"
+                    md-search-text="ctrl.searchText"
+                    md-selected-item-change="ctrl.selectedItemChange(item)"
+                    md-items="item in ctrl.querySearch(ctrl.searchText)"
+                    md-item-text="item.value"
+                    md-min-length="0"
+                    class="md-block"
+                    placeholder="Укажите свою профессию">
+                <md-item-template>
+                    <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.value}}</span>
+                </md-item-template>
+                <md-not-found>
+                    К сожалению такой профессии у нас не числиться
+                </md-not-found>
+            </md-autocomplete>
+            <div layout="row" >
+                <div flex="20">
+                    <md-input-container class="md-block mt-select stylish_selector" flex-gt-sm>
+                        <label>Code</label>
+                        <md-select md-container-class="select_st1" ng-model="props.phoneCode" ng-change="ctrl.changePhoneCode()">
+                            <md-option ng-repeat="item in props.phoneCodes" value="{{item.sign}}">
+                                <div class="flag-icon flag_{{item.sign}}"></div>
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+                </div>
+                <div flex>
+                    <md-input-container md-no-float class="md-block styled-box">
+                        <input
+                                data-app="phone"
+                                ng-model="user.phone"
+                                required type="text"
+                                placeholder="{{props.phone.code}}">
+                    </md-input-container>
+                </div>
+            </div>
+            <section>
+                <md-button
+                        ng-disabled="regUserForm.$invalid"
+                        class="md-raised md-primary"
+                        ng-click="ctrl.registerUser($event)">Регистрация</md-button>
+            </section>
+        </form>
+    </md-content>
+</div>

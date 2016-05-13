@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="robots" content="noindex">
+        <link rel="stylesheet" href="js/vendors/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="js/vendors/angularMaterial/angular-material.css">
+        <link rel="stylesheet" href="css/jquery.autocomplete.css">
+        <link rel="stylesheet" href="css/general.css">
+    </head>
+    <body>
+        <div class="app-container">
+            <div class="container-fluid">
+                <header>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-xs-6">
+                            <a href="#/" class="logo">
+                                <h1>Angular Form</h1>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xs-6"></div>
+                    </div>
+                </header>
+                <div data-ng-view></div>
+            </div>
+        </div>
+        <script src="js/vendors/require/require.js" data-main="js/app/config.js"></script>
+    </body>
+</html>
